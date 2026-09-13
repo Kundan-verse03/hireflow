@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import "./App.css";
 import hireflowLogo from "./assets/hireflow-logo.png";
+import { Analytics } from "@vercel/analytics/next"
 
 const stages = ["Applied", "Screening", "Interview", "Offer", "Hired"];
 
