@@ -145,6 +145,14 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [showWelcome, setShowWelcome] = useState(true);
   const [showNotifications, setShowNotifications] = useState(false);
+  const currentHour = new Date().getHours();
+
+const greeting =
+  currentHour < 12
+    ? "Good morning"
+    : currentHour < 18
+      ? "Good afternoon"
+      : "Good evening";
   const [activePage, setActivePage] = useState("Dashboard");
   const [jobs, setJobs] = useState([
   {
@@ -425,7 +433,7 @@ const [settings, setSettings] = useState({
       <div className="page-heading">
         <div>
           <p className="eyebrow">Recruitment overview</p>
-          <h1>Good morning, Kundan 👋</h1>
+          <h1>{greeting}, HR❤️ 👋</h1>
           <p className="page-description">
             Here’s what’s happening across your hiring pipeline.
           </p>
