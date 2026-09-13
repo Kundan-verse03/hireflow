@@ -433,7 +433,7 @@ const [settings, setSettings] = useState({
       <div className="page-heading">
         <div>
           <p className="eyebrow">Recruitment overview</p>
-          <h1>{greeting}, HR❤️ 👋</h1>
+          <h1>{greeting},HR❤️</h1>
           <p className="page-description">
             Here’s what’s happening across your hiring pipeline.
           </p>
